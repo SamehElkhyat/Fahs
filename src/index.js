@@ -9,6 +9,8 @@ import SignUpCompany from "./Componant/Auth/SignUpCompany/SignUpCompany";
 import ResetPassword from "./Componant/Auth/ResetPassword/ResetPassword";
 import VerifyEmail from "./Componant/Auth/verifyEmail/VerifyEmail";
 import ReCreatePassword from "./Componant/Auth/ReCreatePassword/ReCreatePassword";
+import LandingPages from "./Componant/LandingPages/LandingPages";
+import Section2 from "./Componant/LandingPages/Section2";
 
 // تكوين مسارات التطبيق
 const RouterPath = createBrowserRouter([
@@ -40,7 +42,12 @@ const RouterPath = createBrowserRouter([
       {
         path: "recreatepassword",
         element: <ReCreatePassword />,
+
       },
+      {
+        path: "landingpages",
+        element: <LandingPages />,
+      }
     ],
   },
 ]);
